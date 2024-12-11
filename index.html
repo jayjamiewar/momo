@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOMO-ERC Airdrop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+    <style>
+        #main-content {
+            display: none;
+        }
+        #captcha-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.9);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body class="bg-indigo-900 text-white">
+    <div id="captcha-container">
+        <div class="h-captcha" data-sitekey="65182cae-3818-4c4c-b2be-efc220bcce9c" data-callback="hcaptchaCallback"></div>
+    </div>
+
+    <div id="main-content">
+        <header class="bg-indigo-900 py-4 px-6 shadow-lg">
+            <div class="flex items-center">
+                <img src="https://replicate.delivery/xezq/1ai6IE85b9rhO1WIMVdbimKcbpfLFt4RWw4PZankynPQHF8JA/out-0.png" alt="Cartoon frog avatar" class="w-10 h-10 rounded-full mr-3" height="40" width="40">
+                <h1 class="text-white text-2xl font-bold">momo-erc</h1>
+            </div>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="hover:text-yellow-300">Home</a></li>
+                    <li><a href="#" class="hover:text-yellow-300">About</a></li>
+                    <li><a href="#" class="hover:text-yellow-300">Airdrop</a></li>
+                    <li><a href="#" class="hover:text-yellow-300">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="max-w-7xl mx-auto px-4 py-12">
+            <section class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
+                <div>
+                    <h2 class="text-yellow-300 text-5xl font-bold mb-4">Special Holiday Airdrop</h2>
+                    <p class="mb-4">Claim your exclusive tokens for our exciting Holiday Season Relaunch!</p>
+                    <span class="bg-purple-700 text-white px-4 py-2 rounded-full text-lg font-semibold inline-block mb-6">TAX 0</span>
+                    <button class="bg-yellow-300 text-black px-6 py-3 rounded-lg font-bold">Claim Airdrop Now</button>
+
+                    <div class="text-center mt-6">
+                        <h3 class="text-white text-xl font-bold mb-2">Time Remaining to Claim</h3>
+                        <div id="countdown" class="text-4xl text-yellow-300 font-bold">2:00:00</div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <img src="https://replicate.delivery/xezq/X31y7USALv6wIhab1bF3DkMelaZCqrL6dlJwCJLNyeeCdUwnA/out-0.png" alt="Cartoon frog character" class="w-full max-w-md mx-auto" height="400" width="400">
+                    <div class="absolute inset-0 border-4 border-blue-400 rounded-full animate-pulse"></div>
+                    <div class="absolute -inset-4 border border-blue-400 rounded-full"></div>
+                    <div class="absolute top-0 right-0 w-8 h-8 bg-blue-400 rounded-full animate-bounce"></div>
+                    <div class="absolute bottom-12 left-0 w-6 h-6 bg-blue-400 rounded-full animate-ping"></div>
+                    <div class="absolute top-12 left-0 w-4 h-4 bg-white rounded-full"></div>
+                </div>
+            </section>
+
+            <section class="bg-indigo-800 rounded-lg shadow-xl p-8 mb-16">
+                <h3 class="text-white text-3xl font-bold mb-6">Airdrop Details</h3>
+                <ul class="list-disc pl-5">
+                    <li>Exclusive holiday-themed tokens</li>
+                    <li>Limited time offer</li>
+                    <li>No transaction fees</li>
+                    <li>Instant delivery to your wallet</li>
+                </ul>
+            </section>
+
+            <section class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-purple-800 rounded-lg p-6 text-white">
+                    <h4 class="text-xl font-bold mb-4">Community</h4>
+                    <p>Join our vibrant community and stay updated on the latest news and events.</p>
+                </div>
+                <div class="bg-purple-800 rounded-lg p-6 text-white">
+                    <h4 class="text-xl font-bold mb-4">Tokenomics</h4>
+                    <p>Learn about our token distribution and economic model.</p>
+                </div>
+                <div class="bg-purple-800 rounded-lg p-6 text-white">
+                    <h4 class="text-xl font-bold mb-4">Roadmap</h4>
+                    <p>Explore our future plans and upcoming milestones.</p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center py-4">
+            <p>© 2023 MOMO-erc. All rights reserved.</p>
+            <div class="flex space-x-4 mt-4 md:mt-0">
+                <a href="#" class="hover:text-yellow-300">X</a>
+                <a href="#" class="hover:text-yellow-300">Y</a>
+                <a href="#" class="hover:text-yellow-300">Z</a>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function hcaptchaCallback(token) {
+            // Hide the captcha container
+            document.getElementById('captcha-container').style.display = 'none';
+            
+            // Show the main content
+            document.getElementById('main-content').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
